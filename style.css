@@ -1,0 +1,102 @@
+/************** Complete Page **************/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.main-page {
+  height: 100vh;
+  display: flex;
+}
+
+/*********************** Side Line ***********************/
+.side-line {
+  background-color: #37c9ef;
+  height: 100%;
+  width: 25px;
+}
+
+/*********************** Side Bar ***********************/
+.side-bar {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  box-shadow: 1px 1px 10px rgb(185, 185, 185);
+}
+
+.circle {
+  height: 75px;
+  width: 75px;
+  background-color: #c7d0d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-circle {
+  background-color: #37c9ef;
+}
+
+/********************** Right Panel *********************/
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/********************** Header *********************/
+.header{
+  background-color: #37c9ef;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgb(185, 185, 185);
+}
+
+.logo-container{
+   padding-right: 100px;
+}
+
+.empty-side{
+  padding-left: 100px;
+}
+
+h1{
+  font-family: cairo, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+/********************** Tablet container *********************/
+.tablet-container {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#tablet-img {
+  position: absolute;
+}
+
+#main-canvas {
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Web</title>
+
+
+    <!-- Link to the Css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Add Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <!-- TensorFlow JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- Main page (inside this we will have ecerything) -->
+    <div class="main-page">
+      <!-- ------------------------------- Side-Line ------------------------------- -->
+      <div class="side-line"></div>
+      <!-- ------------------------------- Side-Bar ------------------------------- -->
+      <div class="side-bar">
+        <span class="circle"
+          ><i class="material-icons" style="font-size: 36px; color: white"
+            >settings</i
+          ></span
+        >
+        <span class="circle"
+          ><i class="material-icons" style="font-size: 36px; color: white"
+            >info</i
+          ></span
+        >
+        <span class="circle"
+          ><i class="material-icons" style="font-size: 36px; color: white"
+            >visibility</i
+          ></span
+        >
+        <span class="circle"
+          ><i class="material-icons" style="font-size: 36px; color: white"
+            >auto_fix_normal</i
+          ></span
+        >
+        <span class="circle blue-circle"
+          ><i class="material-icons" style="font-size: 36px; color: white"
+            >videocam</i
+          ></span
+        >
+      </div>
+      <!-- ------------------------------- right-Panel ------------------------------- -->
+      <div class="right-panel">
+        <!-- ------------------ Header ------------------ -->
+        <div class="header">
+          <div class="empty-side"></div>
+          <h1>CV Mobile Detector</h1>
+          <div class="logo-container"><img src="../../Resources/Template/Logo.png" alt="" srcset="" width="120"></div>
+        </div>
+        <!-- ------------------ Tablet Container ------------------ -->
+        <div class="tablet-container">
+          <img id="tablet-image" src="../../Resources/Template/tablet.png" width="1050" height="780" alt="">
+          <canvas id="main-canvas" width="960" height="720">
+              <video src="" id="video" width="960" height="720"></video>
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <!-- Link to the Js file -->
+    <script src="main.js"></script>
+  </body>
+</html>
